@@ -1,0 +1,33 @@
+GET http://localhost:3000/subscribers
+
+
+###
+
+
+GET http://localhost:3000/subscribers/5ffb466830cda420c48bab2c
+
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Miroslav Bondik",
+    "subscribedToChannel": "Vladilen Minin"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/5ffb466830cda420c48bab2c
+
+
+###
+
+PATCH http://localhost:3000/subscribers/5ffb49726051301b281ceecc
+Content-Type: application/json
+
+{
+    "name": "New name",
+    "subscribedToChannel": "New channel"
+}
